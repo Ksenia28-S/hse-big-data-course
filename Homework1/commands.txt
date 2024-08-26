@@ -1,0 +1,7 @@
+# команда для запуска mapreduce
+
+/usr/local/hadoop/bin/hadoop jar /home/ksenia/hadoop-streaming-3.3.4.jar \
+-file /home/ksenia/mapper.py    -mapper /home/ksenia/mapper.py \
+-file /home/ksenia/reducer.py   -reducer /home/ksenia/reducer.py \
+-input /home/ksenia/AB_NYC_2019.csv \
+-output /home/ksenia/outfile
